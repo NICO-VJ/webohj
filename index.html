@@ -31,10 +31,18 @@
             <p>Tällä sivulla käsitellään CSS-tyylejä.</p>
             </div>
 
-            <div class="card">
+            
+        <div class="card" onclick="tulossaInfo(this)">
             <h2>Tulossa</h2>
-            </div>
-    </section>
+            <p>Klikkaa lisätietoja</p>
+            
+            <script>
+                function tulossaInfo(card) {
+                 card.querySelector("p").textContent = "Tämä sivu on vielä työn alla.";}
+            </script>
+        </div>
+
+        </section>
     </div>
 </body>
 </html>
